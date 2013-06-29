@@ -1,0 +1,267 @@
+body {
+  background: #f6f6f6;
+  font-family: 'Georgia', serif;
+  font-weight: normal;
+  color: #5f5f5f; }
+
+h1, h2, h3 {
+  font-weight: normal; }
+
+header {
+  position: fixed;
+  padding: 10px 0 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: block;
+  background: #f6f6f6; }
+  header .container {
+    background: #f6f6f6; }
+  header a {
+    font-family: 'brandon-grotesque';
+    text-decoration: none;
+    color: #363636;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 60px 40px 0px;
+    line-height: 1;
+    display: inline-block; }
+
+.hide {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+
+h1 {
+  font-size: 28px;
+  font-weight: normal;
+  display: block;
+  width: 68%;
+  margin: 220px auto 100px;
+  text-align: center;
+  line-height: 1.6; }
+  h1 span {
+    color: #9cd6d6; }
+
+h2 {
+  color: #363636;
+  font-size: 53px;
+  margin: 0 0 10px;
+  line-height: 1; }
+
+#zolodeck .description {
+  text-align: left;
+  line-height: 1.7;
+  font-size: 19px;
+  width: 69%;
+  display: block;
+  margin: -100px auto auto;
+  letter-spacing: -1px; }
+
+.section {
+  margin: 100px auto;
+  text-align: center; }
+  .section .subtitle {
+    color: #7d7d7d;
+    font-style: italic;
+    font-size: 22px;
+    margin-top: 22px;
+    margin-bottom: 30px; }
+
+nav {
+  display: table;
+  float: right; }
+
+img {
+  max-width: 100%; }
+
+.divider {
+  display: block;
+  margin: auto auto; }
+
+ul {
+  overflow: hidden;
+  display: table;
+  margin: 0; }
+  ul li {
+    float: left; }
+
+#team .picture-border, #advisors .picture-border {
+  display: block;
+  margin: auto auto;
+  width: 132px;
+  height: 132px;
+  border-radius: 66px;
+  -webkit-border-radius: 66px;
+  -moz-border-radius: 66px;
+  border: 5px solid #c2e4e4; }
+  #team .picture-border img, #advisors .picture-border img {
+    -webkit-mask-box-image: url(../img/mask.png);
+    -moz-mask-box-image: url(../img/mask.png);
+    -o-mask-box-image: url(../img/mask.png); }
+
+#team, #advisors, .signup {
+  width: 69%; }
+
+.signup {
+  width: 320px;
+  margin: auto auto 400px; }
+  .signup p {
+    font-family: 'brandon-grotesque';
+    font-weight: bold;
+    color: #73c9ca;
+    margin-bottom: 5px;
+    text-align: center; }
+  .signup form {
+    overflow: hidden;
+    display: table;
+    margin: 10px auto; }
+  .signup input[type=text] {
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    background-color: #fff;
+    font-family: 'brandon-grotesque';
+    font-size: 16px;
+    padding: 10px;
+    float: left;
+    width: 220px; }
+    .signup input[type=text]:focus {
+      outline: none; }
+  .signup #submit {
+    border: none;
+    background: #73c9ca;
+    height: 42px;
+    margin-left: 10px;
+    width: 53px;
+    float: left;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    background-image: url(../img/arrow-right@2x.png);
+    background-size: 50%;
+    background-position: center center;
+    background-repeat: no-repeat; }
+    .signup #submit:hover {
+      cursor: pointer; }
+
+#advisors h3 span {
+  font-weight: normal; }
+#advisors .grid {
+  text-align: left; }
+  #advisors .grid .unit {
+    margin-top: 50px; }
+
+/* TABS */
+#team-tab .nav {
+  overflow: hidden;
+  display: block; }
+  #team-tab .nav li {
+    float: left;
+    width: 33.333%; }
+    #team-tab .nav li a {
+      display: block;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #5f5f5f;
+      font-size: 16px;
+      letter-spacing: 1px; }
+      #team-tab .nav li a span {
+        display: block;
+        font-size: 26px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        letter-spacing: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: 'brandon-grotesque'; }
+  #team-tab .nav li.last {
+    margin-right: 0; }
+
+.arrow-up {
+  width: 0;
+  display: none;
+  height: 0;
+  margin: auto auto;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #c2e4e4; }
+
+.current .arrow-up {
+  display: block; }
+
+.list-wrap {
+  width: 85%;
+  margin: auto auto; }
+
+.list-wrap ul {
+  text-align: left; }
+  .list-wrap ul li {
+    background: #c2e4e4;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    font-size: 17px;
+    letter-spacing: -1px;
+    padding: 20px;
+    line-height: 1.5; }
+
+#team-tab {
+  margin-top: 50px; }
+
+#team-tab ul {
+  list-style: none; }
+  #team-tab ul li a {
+    display: block; }
+
+#advisors .subtitle {
+  margin-bottom: 30px;
+  color: #7d7d7d;
+  font-style: italic;
+  font-size: 22px;
+  margin-top: 22px; }
+#advisors h3 {
+  font-family: 'brandon-grotesque';
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 22px; }
+  #advisors h3 span {
+    font-weight: normal; }
+#advisors p {
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 1.5; }
+
+/* * { outline: 1px dashed black;} */
+@media screen and (max-width: 900px) {
+  header ul li a {
+    padding: 60px 15px 0; } }
+@media screen and (max-width: 685px) {
+  header img {
+    display: block;
+    margin: auto auto 10px; }
+  header nav {
+    float: none;
+    margin: auto auto; }
+  header ul li a {
+    padding: 10px 20px; }
+
+  #team, #advisors, .signup {
+    width: 100%; }
+
+  #team .picture-border, #advisors .picture-border {
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px; }
+
+  #team-tab .nav li a {
+    font-size: 14px; }
+    #team-tab .nav li a span {
+      font-size: 20px; } }
+@media screen and (max-width: 1068px) {
+  #zolodeck .description {
+    margin-top: -20px; } }
